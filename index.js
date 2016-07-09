@@ -14,6 +14,10 @@ app.set('view engine', 'ejs');
     response.redirect(301, 'http://ekreative.com');
   });
 
+ app.post('/', function(request, response) {
+    //response.render('pages/index');
+    response.redirect(301, 'http://ekreative.com');
+  });
  // http.get('/',function(requese,res){  
  
 
