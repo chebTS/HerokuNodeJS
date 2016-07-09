@@ -15,19 +15,19 @@ app.set('view engine', 'ejs');
   });
 
  app.post('/', function(request, response) {
-    //response.render('pages/index');
-    response.redirect(301, 'http://skypebot.ekreative.com/receive');
-  });
- // http.get('/',function(requese,res){  
+    response.end("ok");
+    //response.redirect(301, 'http://skypebot.ekreative.com/receive');
+
+ });
+
+
  
-
- //     //res.redirect('http://skypebot.ekreative.com/receive')
- // })
-
-
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
 
+// app.post('/', function(request, response) {
+//     response.redirect(301, 'http://skypebot.ekreative.com/receive');
+//   });
