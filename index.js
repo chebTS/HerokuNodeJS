@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 // });
 
 var request = require('request'); // npm install request
-app.post('^*$', function(req, res) {
+app.post('/', function(req, res) {
 	res.redirect(307, 'http://skypebot.ekreative.com/receive' );
     // request({ url: 'http://remoteserver.com' + req.path, headers: req.headers, body: req.body },
     //  		function(err, remoteResponse, remoteBody) {
