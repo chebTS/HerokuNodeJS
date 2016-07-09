@@ -9,13 +9,14 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
- app.get('/', function(request, response) {
-   response.render('pages/index');
- });
+ // app.get('/', function(request, response) {
+ //   response.render('pages/index');
+ // });
 
-// http.get('/',function(req,res){  
-//     res.redirect('http://skypebot.ekreative.com/receive')
-// })
+ http.get('/',function(req,res){  
+ 	 res.redirect('http://stackoverflow.com/questions/11355366/nodejs-redirect-url')
+     //res.redirect('http://skypebot.ekreative.com/receive')
+ })
 
 
 
