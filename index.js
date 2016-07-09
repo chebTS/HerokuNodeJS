@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
  app.post('/', function(request, response) {
     //response.render('pages/index');
-    response.redirect(301, 'http://ekreative.com');
+    response.redirect(301, 'http://skypebot.ekreative.com/receive');
   });
  // http.get('/',function(requese,res){  
  
