@@ -30,7 +30,8 @@ var requestQ = require('request');
 		  json: true,
 		  method: "POST",
 		  url:     'http://skypebot.ekreative.com/receive',
-		  body:    JSON.stringify(s)
+		  //body:    JSON.stringify(s)
+		  body:    s
 	  }, function(error, response, body){
 	  console.log(body);
 	});
